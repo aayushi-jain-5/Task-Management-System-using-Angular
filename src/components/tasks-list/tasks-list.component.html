@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let task of tasks">
+    {{ task.name }} ({{ task.priority }})
+    <button (click)="removeTask(task, task.id)">Remove</button>
+    <button (click)="toggleCompleted(task, task.id)">Toggle Completed</button>
+  </li>
+</ul>
